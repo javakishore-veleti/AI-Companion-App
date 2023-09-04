@@ -23,6 +23,21 @@ npx shadcn-ui@latest init
 # ✔ Are you using React Server Components? … no / yes
 # ✔ Write configuration to components.json. Proceed? … yes
 
+# install clerk
+# update .env file with clerk keys
+# add .env file in .gitignore
+npm install @clerk/nextjs
+
+# Update layout.tsx with Clerk import and ClerkProvider
+# create middleware.ts and update this new file contents from https://clerk.com/docs/quickstarts/nextjs -> "Protect your application section" code snippet
+
+# then create app/(auth)/(routes)/sign-up/[[...sign-up]]/page.tsx Build your sign up page https://clerk.com/docs/quickstarts/nextjs#protect-your-application
+
+# then create app/(auth)/(routes)/sign-in/[[...sign-in]]/page.tsx Build your sign in page https://clerk.com/docs/quickstarts/nextjs#protect-your-application
+
+# Update your environment variables as mentioned in https://clerk.com/docs/quickstarts/nextjs#protect-your-application
+
+
 
 ```
 ## Getting Started
